@@ -5,8 +5,8 @@ public class Ss03Asm03 {
         try (Scanner input = new Scanner(System.in)) {
             int countEmployee = 0;
             long salarySum = 0;
-            long highestSalary = 0;
-            long lowestSalary = 500000000;
+            long highestSalary = Integer.MIN_VALUE;
+            long lowestSalary = Integer.MAX_VALUE;
             double bonusSalary = 0;
 
             while (true) {

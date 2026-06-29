@@ -11,7 +11,6 @@ public class Ss03Asm03 {
 
             while (true) {
                 try {
-                    System.out.println();
                     System.out.println("============= MENU =============");
                     System.out.println("1. Nhập lương của nhân viên");
                     System.out.println("2. Hiển thị thống kê");
@@ -75,15 +74,18 @@ public class Ss03Asm03 {
                             System.out.printf("Tổng tiền thưởng nhân viên: %,.0f VND%n", bonusSalary);
                         }
                         case 4 -> {
+                            System.out.println();
                             System.out.println("Kết thúc chương trình.");
                             System.exit(0);
                         }
                         default -> {
-                            System.out.println("Vui lòng chọn các chức năng từ 1 đến 4.");
+                            System.out.println();
+                            System.err.println("Vui lòng chọn các chức năng từ 1 đến 4.");
                         }
                     }
                 } catch (NumberFormatException e) {
-                    System.out.println("Vui lòng nhập giá trị số để chọn chức năng.");
+                    System.out.println();
+                    System.err.println("Vui lòng nhập giá trị số để chọn chức năng.");
                 }
             }
         }
